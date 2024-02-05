@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Decodificador de Texto</title>
+</head>
+<body>
+    <div id="conteudo_esquerda">
+        <img id="logo" src="/assets/Frame 6.png" alt="">
+    </div>
+    <main>
+        <section id="main_principal">
+            <label id="rotulo" for="entrada_texto">Digite seu texto:</label>
+            <textarea name="texto" id="entrada_texto" spellcheck="false"></textarea>
+            <p id="frase_atencao"><img id="simbolo" src="./assets/zondicons--exclamation-solid.svg" alt="simbolo da exclamaçao"> Apenas letras minúsculas e sem acento.</p>
+        </section>
+        <div class="botoes">
+            <button class="botao" onclick="mostrarTextoCriptografado()" style="color: white;">Criptografar</button>
+            <button class="botao" onclick="mostrarTextoDescriptografado()" style="background-color:#EFF1FA ; color: #0A3871;">Descriptografar</button>
+        </div>
+    </main>
+    <div id="conteudo_direita">
+            <div id="msgs_saida">
+                <img id="img_menina" src="./assets/meninalupa.png" alt="">
+                <p class="mensagem_aviso_titulo">Nenhuma mensagem </p>
+                <p class="mensagem_aviso_titulo">encontrada</p>
+                <br>
+                <p class="mensagem_aviso">Digite um texto que você deseja</p>
+                <p class="mensagem_aviso">criptografar ou descriptografar.</p>
+            </div>
+            <div id="msgs_saida2">
+                <p id="mensagem_aviso_titulo2">Nenhuma mensagem encontrada</p>
+                <br>
+                <p id="mensagem_aviso2">Digite um texto que você deseja criptografar ou descriptografar.</p>
+                
+            </div>
+            
+    </div>
+    <div id="conteudo_direita2" style="display:none;">
+        <div id="texto_crip_descr">
+            <textarea id="saida_texto" spellcheck="false"></textarea>
+            <button id="botao1">Copiar</button>
+        </div>
+    </div>
+    <script src="app.js" defer></script>
+</body>
+</html> 
+

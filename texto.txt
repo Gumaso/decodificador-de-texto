@@ -1,0 +1,2 @@
+ <img src="/assets/Frame 6.png" alt="">
+            <div id="frase-atencao"><img id="simbolo" src="./assets/zondicons--exclamation-solid.svg" alt="simbolo da exclamaçao"> Apenas letras minúsculas e sem acento.</div>
